@@ -45,8 +45,8 @@ build:flare --experimental_remote_merkle_tree_cache
 build:flare --experimental_remote_cache_async
 build:flare --incompatible_remote_build_event_upload_respect_no_cache
 common:flare --remote_upload_local_results=false
-common:flare --experimental_remote_downloader=grpcs://cdn.bitrise.flare.build
-common:flare --remote_cache=grpcs://cdn.bitrise.flare.build
+common:flare --experimental_remote_downloader=grpcs://cache.bitrise.flare.build
+common:flare --remote_cache=grpcs://cache.bitrise.flare.build
 common:flare --remote_timeout=600
 common:flare --remote_max_connections=1000
 common:flare --remote_local_fallback
