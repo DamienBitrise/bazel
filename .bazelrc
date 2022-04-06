@@ -42,7 +42,7 @@ build --tool_java_language_version=11
 # Remote features
 # Sensitive values are added to gitignored additional .bazelrc files
 build:flare --experimental_remote_merkle_tree_cache
-build:flare --experimental_remote_cache_async
+#build:flare --experimental_remote_cache_async
 build:flare --incompatible_remote_build_event_upload_respect_no_cache
 common:flare --remote_upload_local_results=false
 common:flare --experimental_remote_downloader=grpcs://cache.bitrise.flare.build
@@ -54,7 +54,7 @@ build:flare --experimental_stream_log_file_uploads
 build:flare --incompatible_remote_results_ignore_disk
 build:flare --bes_backend=grpcs://bes.bitrise.flare.build:443
 build:flare --bes_results_url='https://insights.bitrise.flare.build/invocations/'
-build:flare --bes_upload_mode=fully_async
+#build:flare --bes_upload_mode=fully_async
 build:flare --remote_download_toplevel
 build --config=flare
 fetch --config=flare
