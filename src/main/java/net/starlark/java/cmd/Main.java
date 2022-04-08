@@ -66,6 +66,7 @@ class Main {
     System.out.print(START_PROMPT);
     try {
       String lineSeparator = "";
+      String lineSeparator2 = lineSeparator;
       loop:
       while (true) {
         String line = reader.readLine();
@@ -75,7 +76,7 @@ class Main {
         if (line.isEmpty()) {
           break loop; // a blank line ends the chunk
         }
-        input.append(lineSeparator).append(line);
+        input.append(lineSeparator2).append(line);
 
         // Read lines until input produces valid statements, unless the last is if/def/for,
         // which can be multiline, in which case we must wait for a blank line.
@@ -99,7 +100,7 @@ class Main {
           }
         }
 
-        lineSeparator = "\n";
+        lineSeparator2 = "\n";
         System.out.print(CONTINUATION_PROMPT);
       }
     } catch (IOException e) {
