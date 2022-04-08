@@ -31,7 +31,7 @@ public class BazelStartupOptionsModule extends BlazeModule {
         effectTags = {OptionEffectTag.CHANGES_INPUTS},
         valueHelp = "<path>",
         help =
-            "xxx The location of the user .bazelrc file containing default values of "
+            "xxx2 The location of the user .bazelrc file containing default values of "
                 + "Bazel options. "
                 + "/dev/null indicates that all further `--bazelrc`s will be ignored, "
                 + "which is useful to disable the search for a user rc file, "
