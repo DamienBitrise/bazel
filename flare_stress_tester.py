@@ -12,7 +12,7 @@ def trigger_remote_build(commit_hash):
             'commit_hash': commit_hash 
         } 
     }
-    bitrise_token = 'BVd3RKzYKBsHqWV4_bXV9_rbimV_hh6Hj0JeorfHQmbU3Ko7J0AJjNZebTW4yubHLwAiCW90UfBlcv-UqmOBBw'
+    bitrise_token = ''
     headers = {"Authorization": bitrise_token}
     response = requests.post(url, headers=headers, json=data)
     
